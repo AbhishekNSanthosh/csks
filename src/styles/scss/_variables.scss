@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet');
+
+// Colors
+$white: #fff;
+$blue: #1293ee;
+$primary:  rgb(5, 181, 112);
+$secondary: #00272d;
+$font-color: rgb(105, 105, 105);
+$font-highlight-color: rgb(5, 181, 112);
+
+
+// Fonts & Typography
+$font-family : "Raleway";
+
+$font-size-base: 1rem !default;
+$font-size-sm: $font-size-base * .875 !default;
+$font-size-lg: $font-size-base *1.25 !default;
+$font-size-esm: $font-size-base - 0.2rem !default;
+
+$font-weight-lighter: lighter !default;
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-medium: 500 !default;
+$font-weight-semibold: 600 !default;
+$font-weight-bold: 700 !default;
+$font-weight-bolder: bolder !default;
+
+$font-weight-base: $font-weight-normal !default;
+
+$h1-font-size: $font-size-base * 2.5 !default;
+$h2-font-size: $font-size-base * 2 !default;
+$h3-font-size: $font-size-base * 1.75 !default;
+$h4-font-size: $font-size-base * 1.5 !default;
+$h5-font-size: $font-size-base * 1.25 !default;
+$h6-font-size: $font-size-base !default;
+
+$zero : 0;
