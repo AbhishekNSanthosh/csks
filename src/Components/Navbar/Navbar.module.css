@@ -1,0 +1,60 @@
+.navbarContainer {
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 5vw;
+    height: 13vh;
+    z-index: 9990;
+    backdrop-filter: blur(8px);
+    top: 0;
+}
+
+.navbarWrapper {
+    display: flex;
+    width: 100%;
+}
+
+.navbarLeft {
+    flex: 2;
+}
+
+.navbarCenter {
+    flex: 8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4vw;
+}
+
+.navbarRight {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.logo {
+    width: 7rem;
+    display: flex;
+    align-items: center;
+}
+
+.linkName{
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.join{
+    padding: 1rem 1.3rem;
+    background-color: #f78c40;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+
+}
