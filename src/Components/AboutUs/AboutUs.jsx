@@ -2,7 +2,7 @@ import React from "react";
 import about from "../../assets/about.jpg";
 import styles from "./AboutUs.module.css";
 
-export const AboutUs = () => {
+export const AboutUsComponent = () => {
   return (
     <div className={styles.container}>
       <div className={styles.wrapper}>
