@@ -1,0 +1,64 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 1rem 5vw;
+    /* background: url('../../assets/bg.png') center/contain no-repeat; */
+    width: 100vw;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw;
+    width: 100%;
+}
+
+.left {
+    flex: 6;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    width: 100%;
+}
+
+.right {
+    flex: 6;
+    width: 100%;
+}
+
+.title{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.subTitle{
+    font-size: 1.3rem;
+    align-self: flex-start;
+}
+
+.desc {
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+.img {
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.title {
+    align-self: flex-start;
+}
