@@ -1,0 +1,41 @@
+.bannerContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 90vh;
+    margin-top: 13vh;
+}
+
+.bannerImg{
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    /* height: 100%;  */
+    margin-top: -8px;
+}
+
+.dataBox{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    background: red;
+    width: 70%;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.448);
+    padding: 2rem;
+}
+
+.bannerTitle{
+    font-size: 3vw;
+    font-weight: 700;
+    color: #fff;
+}
+
+.subTitle{
+    font-size: 1.3vw;
+    font-weight: 400;
+    color: #fff;
+}
