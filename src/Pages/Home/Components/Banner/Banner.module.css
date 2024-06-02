@@ -4,7 +4,9 @@
     justify-content: center;
     width: 100vw;
     height: 90vh;
-    margin-top: 12.3vh;
+    background: url('../../../../assets/banner1.png') center/cover no-repeat;
+    margin-top: 11vh;
+    position: relative;
 }
 
 .bannerImg{
