@@ -7,6 +7,7 @@ import {
 import { Home } from "./Pages/Home/Home";
 import { AboutUs } from "./Pages/AboutUs/AboutUs";
 import { OfficeBearers } from "./Pages/OfficeBearers/OfficeBearers";
+import { Gallery } from "./Pages/Gallery/Gallery";
 
 function App() {
   const router = createBrowserRouter([
@@ -33,6 +34,10 @@ function App() {
     {
       path: "/office-bearers",
       element: <OfficeBearers />,
+    },
+    {
+      path: "/gallery",
+      element: <Gallery />,
     },
   ]);
   return <RouterProvider router={router} />;

@@ -20,6 +20,24 @@ import Swsthik from '../assets/execom/Swsthik.png'
 import Shiraz from '../assets/execom/Shiraz.png'
 import Vasif from '../assets/execom/vasif.png'
 
+//gallery images
+import image1 from '../assets/Gallery/colloquium1.jpg'
+import image2 from '../assets/Gallery/colloquium2.jpg'
+import image3 from '../assets/Gallery/colloquium4.jpg'
+import image4 from '../assets/Gallery/colloquium5.jpg'
+import image5 from '../assets/Gallery/colloquium6.jpg'
+import image6 from '../assets/Gallery/colloquium7.jpg'
+import image7 from '../assets/Gallery/gallery1.jpg'
+import image8 from '../assets/Gallery/gallery2.jpg'
+import image9 from '../assets/Gallery/portfolio-1.jpg'
+import image10 from '../assets/Gallery/portfolio-2.jpg'
+import image11 from '../assets/Gallery/portfolio-3.jpg'
+import image12 from '../assets/Gallery/portfolio-4.jpg'
+import image13 from '../assets/Gallery/portfolio-5.jpg'
+import image14 from '../assets/Gallery/portfolio-6.jpg'
+import image15 from '../assets/Gallery/portfolio-7.jpg'
+import image16 from '../assets/Gallery/portfolio-8.jpg'
+import image17 from '../assets/Gallery/portfolio-9.jpg'
 
 export const navbarLinks = [
     {
@@ -230,3 +248,23 @@ export const Execom24 =  [
               mobNo:""
           }
       ];
+
+export const galleryImages = [
+    image1,
+    image2,
+    image3,
+    image4,
+    image5,
+    image6,
+    image7,
+    image8,
+    image9,
+    image10,
+    image11,
+    image12,
+    image13,
+    image14,
+    image15,
+    image16,
+    image17
+]
