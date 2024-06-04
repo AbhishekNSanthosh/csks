@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Footer.module.css";
 import logo from "../../assets/logo.png";
-import { navbarLinks } from "../../Utils/Constants";
+import { OtherLinks, navbarLinks } from "../../Utils/Constants";
 
 export const Footer = () => {
   return (
@@ -16,7 +16,7 @@ export const Footer = () => {
             <div className={styles.linkBox}>
               {navbarLinks?.map((link) => (
                 <div className={styles.linkWrap}>
-                  <a href="" className={styles.link}>
+                  <a href={link?.link} className={styles.link}>
                     {link?.title}
                   </a>
                 </div>
@@ -26,9 +26,9 @@ export const Footer = () => {
           <div className={styles.col2}>
             <span className={styles.title}>Other Links</span>
             <div className={styles.linkBox}>
-              {navbarLinks?.map((link) => (
+              {OtherLinks?.map((link) => (
                 <div className={styles.linkWrap}>
-                  <a href="" className={styles.link}>
+                  <a href={link?.link} target="_blank" className={styles.link}>
                     {link?.title}
                   </a>
                 </div>

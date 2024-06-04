@@ -55,3 +55,27 @@
     height: 1px;
     background-color: orange;
 }
+
+.link {
+  position: relative; /* Original link color */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.link::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px; /* Thickness of the progress line */
+    background-color: #f78c40; /* Color of the progress line */
+    transition: width 0.3s ease; /* Smooth width transition */
+  }
+  
+  .link:hover {
+    color: #f78c40; /* New link color on hover */
+  }
+  
+  .link:hover::before {
+    width: 100%; /* Expand the width to full on hover */
+  }

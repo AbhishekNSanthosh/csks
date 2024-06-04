@@ -21,3 +21,14 @@ export const navbarLinks = [
         link:"/contact",
     },
 ]
+
+export const OtherLinks = [
+    {
+        title:"IEEE",
+        link:"https://ieee.org",
+    },
+    {
+        title:"Computer Society",
+        link:"https://www.computer.org/",
+    },
+]
