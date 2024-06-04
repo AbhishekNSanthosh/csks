@@ -1,0 +1,26 @@
+.container {
+    width: 100vw;
+    margin-top: 10vh;
+    padding: 2.4rem 5vw;
+    height: auto;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+.title {
+    font-size: 2vw;
+    font-weight: 600;
+    color: #f78c40;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vw;
+}

@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import { Home } from "./Pages/Home/Home";
 import { AboutUs } from "./Pages/AboutUs/AboutUs";
+import { OfficeBearers } from "./Pages/OfficeBearers/OfficeBearers";
 
 function App() {
   const router = createBrowserRouter([
@@ -28,6 +29,10 @@ function App() {
     {
       path: "/aboutus",
       element: <AboutUs />,
+    },
+    {
+      path: "/office-bearers",
+      element: <OfficeBearers />,
     },
   ]);
   return <RouterProvider router={router} />;

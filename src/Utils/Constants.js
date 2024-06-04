@@ -1,5 +1,5 @@
 import Abhirami from '../assets/execom/Abhirami.png'
-import Abhishek from '../assets/execom/Abhishek.png'
+import Abhishek from '../assets/execom/Abhishek1.png'
 import Biswas from '../assets/execom/BiswasSekhar.png'
 import Deepthi from '../assets/execom/drdeepthis.png'
 import Janajith from '../assets/execom/Janajith.png'
