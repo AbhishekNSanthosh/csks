@@ -5,15 +5,13 @@
   <link rel="icon" href="logo.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#000000" />
-  <meta name="description"
-    content="" />
+  <meta name="description" content="" />
   <link rel="apple-touch-icon" href="logo.png" />
   <meta name="keywords" content="">
   <meta name="robots" content="index, follow">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
-
 
   <title>IEEE CSKS</title>
   <style>
@@ -76,26 +74,21 @@
       }
     }
   </style>
-  <script>
-    $(window).load(function () {
-      $('#overlay').hide();
-    });
-  </script>
 </head>
 
 <body>
   <div id="overlay">
-    <img src="./logo.png" alt="">
+    <img src="./logo.png" alt="Logo">
     <span class="loader"></span>
+  </div>
+  <div id="root"></div>
 
-
-  </div>
-  </div>
-  </div>
-  <div id="root">
-
-  </div>
   <script type="module" src="/src/main.jsx"></script>
+  <script>
+    $(window).on('load', function () {
+      $('#overlay').fadeOut();
+    });
+  </script>
 </body>
 
 </html>
