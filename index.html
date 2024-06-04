@@ -86,7 +86,25 @@
   <script type="module" src="/src/main.jsx"></script>
   <script>
     $(window).on('load', function () {
-      $('#overlay').fadeOut();
+      var images = $('#root img');
+      var totalImages = images.length;
+      var imagesLoaded = 0;
+
+      if (totalImages === 0) {
+        // No images found in the #root element
+        $('#overlay').fadeOut();
+      } else {
+        images.each(function () {
+          var img = new Image();
+          img.src = $(this).attr('src');
+          img.onload = function () {
+            imagesLoaded++;
+            if (imagesLoaded === totalImages) {
+              $('#overlay').fadeOut();
+            }
+          };
+        });
+      }
     });
   </script>
 </body>
