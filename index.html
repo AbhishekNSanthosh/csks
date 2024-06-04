@@ -87,24 +87,28 @@
   <script>
     $(window).on('load', function () {
       var images = $('#root img');
-      var totalImages = images.length;
-      var imagesLoaded = 0;
+      var imagePromises = [];
 
-      if (totalImages === 0) {
-        // No images found in the #root element
-        $('#overlay').fadeOut();
-      } else {
-        images.each(function () {
-          var img = new Image();
-          img.src = $(this).attr('src');
-          img.onload = function () {
-            imagesLoaded++;
-            if (imagesLoaded === totalImages) {
-              $('#overlay').fadeOut();
-            }
-          };
+      images.each(function () {
+        var img = $(this);
+        var imagePromise = new Promise(function (resolve, reject) {
+          img.on('load', resolve);
+          img.on('error', reject);
+
+          // Trigger the load event for cached images
+          if (img[0].complete) {
+            resolve();
+          }
         });
-      }
+
+        imagePromises.push(imagePromise);
+      });
+
+      Promise.all(imagePromises).then(function () {
+        $('#overlay').fadeOut();
+      }).catch(function () {
+        $('#overlay').fadeOut(); // Optionally handle image load errors
+      });
     });
   </script>
 </body>
