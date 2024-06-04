@@ -5,6 +5,7 @@ import { Banner } from "./Components/Banner/Banner";
 import { Footer } from "../../Components/Footer/Footer";
 import { AboutUsComponent } from "../../Components/AboutUs/AboutUs";
 import { Counter } from "./Components/Counter/Counter";
+import { CardView } from "./Components/CardView/CardView";
 
 export const Home = () => {
   return (
@@ -13,6 +14,7 @@ export const Home = () => {
       <Banner />
       <AboutUsComponent />
       <Counter/>
+      <CardView/>
       <Footer />
     </>
   );

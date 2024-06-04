@@ -1,0 +1,11 @@
+.container{
+    width: 100vw;
+    height: auto;
+    padding: 8rem 5vw;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2vw;
+}
+
