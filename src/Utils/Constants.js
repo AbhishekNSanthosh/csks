@@ -28,7 +28,7 @@ import image4 from '../assets/Gallery/colloquium5.jpg'
 import image5 from '../assets/Gallery/colloquium6.jpg'
 import image6 from '../assets/Gallery/colloquium7.jpg'
 import image7 from '../assets/Gallery/gallery1.jpg'
-import image8 from '../assets/Gallery/gallery2.jpg'
+// import image8 from '../assets/Gallery/gallery2.jpg'
 import image9 from '../assets/Gallery/portfolio-1.jpg'
 import image10 from '../assets/Gallery/portfolio-2.jpg'
 import image11 from '../assets/Gallery/portfolio-3.jpg'
@@ -257,7 +257,7 @@ export const galleryImages = [
     image5,
     image6,
     image7,
-    image8,
+    // image8,
     image9,
     image10,
     image11,
