@@ -58,7 +58,7 @@ export const navbarLinks = [
     },
     {
         title:"Contact",
-        link:"/contact",
+        link:"/contact-us",
     },
 ]
 

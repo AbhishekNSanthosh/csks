@@ -1,0 +1,6 @@
+.container{
+    min-height: 100vh;
+    display: flex;
+    padding: 2rem 5vw;
+    margin-top: 10vh;
+}
