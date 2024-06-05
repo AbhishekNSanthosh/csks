@@ -5,24 +5,21 @@
     width: 100vw;
     z-index: 1;
     height: 90vh;
-    background: linear-gradient(to bottom, #13151778, #13151778),url('../../../../assets/banner1.png') center/cover no-repeat;
+    background: linear-gradient(to bottom, #13151778, #13151778), url('../../../../assets/banner1.png') center/cover no-repeat;
     margin-top: 11vh;
     position: relative;
 }
 
 @media only screen and (max-width: 880px) {
     .bannerContainer{
-        display: flex;
-        align-items: center;
-        justify-content: center;
         width: 100vw;
-        height:90vh;
+        height: 93vh;
         z-index: -1;
         background: linear-gradient(to bottom, #13151778, #13151778), url('../../../../assets/banner1.png') center/cover no-repeat;
         margin-top: 9vh;
         position: relative;
-        overflow: hidden; /* Ensure content does not overflow */
-        animation: scrollLeftRight 60s linear infinite; /* Add animation */
+        overflow: hidden;
+        /* animation: scrollLeftRight 20s linear infinite;  */
     }
 }
 
@@ -38,12 +35,12 @@
         background-position: 0% 50%;
     }
 }
+
 .bannerImg{
     background-position: center;
     background-size: cover;
     position: relative;
     overflow: hidden;
-    /* height: 100%;  */
     margin-top: -8px;
 }
 
@@ -52,7 +49,6 @@
     flex-direction: column;
     position: absolute;
     top: 50%;
-    background: red;
     width: 70%;
     border-radius: 10px;
     background: rgba(0, 0, 0, 0.448);
@@ -61,14 +57,8 @@
 
 @media only screen and (max-width: 880px) {
     .dataBox{
-        display: flex;
-        flex-direction: column;
-        position: absolute;
         top: 40%;
-        background: red;
         width: 95vw;
-        border-radius: 10px;
-        background: rgba(0, 0, 0, 0.448);
         padding: 2rem;
     }
 }

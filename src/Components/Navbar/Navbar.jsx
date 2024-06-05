@@ -19,8 +19,8 @@ export const Navbar = () => {
             <img src={logo} alt="" className={styles.logo} />
           </div>
           <div className={styles.navbarCenter}>
-            {navbarLinks?.map((navItem) => (
-              <div className={styles.navbarLinkBox}>
+            {navbarLinks?.map((navItem,index) => (
+              <div className={styles.navbarLinkBox} key={index}>
                 <a href={navItem?.link} className={styles.linkName}>
                   {navItem?.title}
                 </a>
@@ -53,8 +53,8 @@ export const Navbar = () => {
           <div className={styles.drawer}>
             <div className={styles.mobileWrap}>
               <div className={styles.mobileNav}>
-                {navbarLinks?.map((navItem) => (
-                  <>
+                {navbarLinks?.map((navItem,index) => (
+                  <div key={index}>
                     <div className={styles.mobileNavbarLinkBox}>
                       <a onClick={()=>{setIsDrawerOpen(false)}} href={navItem?.link} className={styles.mobilelinkName}>
                         {navItem?.title}
@@ -62,7 +62,7 @@ export const Navbar = () => {
                       <FontAwesomeIcon icon={faAngleRight} />
                     </div>
                     {navItem?.hr && <div className={styles.hr}></div>}
-                  </>
+                  </div>
                 ))}
               </div>
               <button className={styles.mobileJoin}>

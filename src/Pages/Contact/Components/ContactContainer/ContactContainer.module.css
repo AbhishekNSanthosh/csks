@@ -16,6 +16,14 @@
     font-weight: 700;
 }
 
+@media only screen and (max-width: 880px) {
+    .title {
+        font-size: 7vw;
+        color: #f78c40;
+        font-weight: 700;
+    }
+}
+
 .row {
     width: 100%;
     display: flex;
@@ -23,10 +31,29 @@
     justify-content: center;
 }
 
+@media only screen and (max-width: 880px) {
+    .row {
+        width: 100%;
+        display: flex;
+        /* align-items: center; */
+        justify-content: center;
+        flex-direction: column;
+        gap: 5vh;
+    }
+}
+
 .left {
     flex: 6;
     width: 100%;
     padding: 1rem 2rem;
+}
+
+@media only screen and (max-width: 880px) {
+    .left {
+        flex: 6;
+        width: 100%;
+        padding: 0;
+    }
 }
 
 .form {
@@ -54,6 +81,14 @@
     font-weight: 600;
 }
 
+@media only screen and (max-width: 880px) {
+    .formTitle {
+        font-size: 4vw;
+        color: #f78c40;
+        font-weight: 600;
+    }
+}
+
 .formItemRow {
     width: 100%;
     display: flex;
@@ -65,6 +100,15 @@
     display: flex;
     width: 100%;
     gap: 1vw;
+}
+
+@media only screen and (max-width: 880px) {
+    .infoBox {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 2vh;
+    }
 }
 
 .textBox {
@@ -103,11 +147,32 @@ input.inputField:-webkit-autofill {
     padding: 2rem;
 }
 
+@media only screen and (max-width: 880px) {
+    .right {
+        flex: 6;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 2vh;
+        padding: 0rem;
+    }
+}
+
 .contactInfo {
     font-size: 1.5vw;
     color: #f78c40;
     text-decoration: underline;
     font-weight: 600;
+}
+
+@media only screen and (max-width: 880px) {
+    .contactInfo {
+        font-size: 5vw;
+        color: #f78c40;
+        text-decoration: underline;
+        font-weight: 600;
+    }
 }
 
 .contactdesc {
@@ -132,6 +197,18 @@ input.inputField:-webkit-autofill {
     display: flex;
 }
 
+@media only screen and (max-width: 880px) {
+    .rightBox {
+        width: 100%;
+        border: 1px solid rgb(240, 240, 240);
+        padding: 1.5rem;
+        border-radius: 10px;
+        background: #fff;
+        gap: 2vw;
+        display: flex;
+    }
+}
+
 .colleft {
     flex: 1;
     width: 100%;
@@ -154,6 +231,13 @@ input.inputField:-webkit-autofill {
     font-size: 1.3rem;
 }
 
+@media only screen and (max-width: 880px) {
+    .icon {
+        color: #fff;
+        font-size: 1rem;
+    }
+}
+
 .colRight {
     flex: 11;
     width: 100%;
@@ -167,4 +251,21 @@ input.inputField:-webkit-autofill {
 .rightTitle {
     font-size: 1.1rem;
     font-weight: 500;
+}
+
+@media only screen and (max-width: 880px) {
+    .rightTitle {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+}
+
+.rightInfo{
+    font-size: 1rem;
+}
+
+@media only screen and (max-width: 880px) {
+    .rightInfo{
+        font-size: 0.9rem;
+    }
 }

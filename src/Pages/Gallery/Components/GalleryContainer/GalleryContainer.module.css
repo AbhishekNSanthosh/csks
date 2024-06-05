@@ -4,6 +4,14 @@
     margin-top: 10vh;
 }
 
+@media only screen and (max-width: 880px) {
+    .container{
+        min-height: 100vh;
+        padding: 1rem 5vw 6vh;
+        margin-top: 10vh;
+    }    
+}
+
 .wrapper{
     display: flex;
     align-items: center;
@@ -40,6 +48,14 @@ img {
     font-size: 2vw;
     font-weight: 700;
     color: #f78c40;
+}
+
+@media only screen and (max-width: 880px) {
+    .title{
+        font-size: 7vw;
+        font-weight: 700;
+        color: #f78c40;
+    }
 }
 
 .wrap {

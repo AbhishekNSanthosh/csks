@@ -33,7 +33,7 @@ export const CardView = () => {
     <div className={styles.container}>
         {
             CardItems?.map((item,index)=>(
-                <Card icon={item?.icon} title={item?.title}/>
+                <Card icon={item?.icon} title={item?.title} key={index}/>
             ))
         }
     </div>

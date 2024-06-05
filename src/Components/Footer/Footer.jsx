@@ -15,8 +15,8 @@ export const Footer = () => {
           <div className={styles.col2}>
             <span className={styles.title}>Useful links</span>
             <div className={styles.linkBox}>
-              {navbarLinks?.map((link) => (
-                <div className={styles.linkWrap}>
+              {navbarLinks?.map((link,index) => (
+                <div className={styles.linkWrap} key={index}>
                   <a href={link?.link} className={styles.link}>
                     {link?.title}
                   </a>
@@ -27,8 +27,8 @@ export const Footer = () => {
           <div className={styles.col2}>
             <span className={styles.title}>Other Links</span>
             <div className={styles.linkBox}>
-              {OtherLinks?.map((link) => (
-                <div className={styles.linkWrap}>
+              {OtherLinks?.map((link,index) => (
+                <div className={styles.linkWrap} key={index}>
                   <a href={link?.link} target="_blank" className={styles.link}>
                     {link?.title}
                   </a>

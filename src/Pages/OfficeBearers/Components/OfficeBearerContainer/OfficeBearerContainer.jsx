@@ -12,7 +12,9 @@ export const OfficeBearerContainer = () => {
             </div>
             <div className={styles.row}>
                 {Execom24?.map((execom,index)=>(
-                    <PersonDetailsCard execom={execom}/>
+                   <div className={styles.wrap} key={index}>
+                   <PersonDetailsCard execom={execom}/>
+                   </div>
                 ))}
             </div>
         </div>
