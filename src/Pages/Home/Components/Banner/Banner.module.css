@@ -19,7 +19,7 @@
         height:90vh;
         z-index: -1;
         background: linear-gradient(to bottom, #13151778, #13151778), url('../../../../assets/banner1.png') center/cover no-repeat;
-        margin-top: 11vh;
+        margin-top: 9vh;
         position: relative;
         overflow: hidden; /* Ensure content does not overflow */
         animation: scrollLeftRight 60s linear infinite; /* Add animation */

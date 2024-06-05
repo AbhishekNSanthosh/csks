@@ -34,9 +34,24 @@
     transition: transform 0.3s ease; /* Add transition for smooth effect */
 }
 
+
+@media only screen and (max-width: 880px) {
+    .icon {
+        font-size: 11vw;
+        transition: transform 0.3s ease; /* Add transition for smooth effect */
+    }
+}
+
 .title{
     font-size: 1.2rem;
     font-weight: 600;
+}
+
+@media only screen and (max-width: 880px) {
+    .title{
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
 }
 
 .container:hover .title {

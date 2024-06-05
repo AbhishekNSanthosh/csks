@@ -11,6 +11,7 @@ export const Footer = () => {
           <div className={styles.col1}>
             <img src={logo} alt="" className={styles.logo} />
           </div>
+          <div className={styles.wrapCol}>
           <div className={styles.col2}>
             <span className={styles.title}>Useful links</span>
             <div className={styles.linkBox}>
@@ -35,9 +36,10 @@ export const Footer = () => {
               ))}
             </div>
           </div>
+          </div>
         </div>
         <div className={styles.hr}></div>
-        <div className={styles.row}>
+        <div className={styles.creditRow}>
             <div className={styles.left}>
                 <span className={styles.credits}>All Rights Reserved</span>
             </div>

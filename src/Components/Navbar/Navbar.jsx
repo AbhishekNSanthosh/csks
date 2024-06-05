@@ -56,7 +56,7 @@ export const Navbar = () => {
                 {navbarLinks?.map((navItem) => (
                   <>
                     <div className={styles.mobileNavbarLinkBox}>
-                      <a href={navItem?.link} className={styles.mobilelinkName}>
+                      <a onClick={()=>{setIsDrawerOpen(false)}} href={navItem?.link} className={styles.mobilelinkName}>
                         {navItem?.title}
                       </a>
                       <FontAwesomeIcon icon={faAngleRight} />

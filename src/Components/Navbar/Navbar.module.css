@@ -16,21 +16,21 @@
 @media only screen and (max-width: 880px) {
     .navbarContainer {
         position: fixed;
+        top: 0;
+        left: 0;
         width: 100vw;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        /* padding: 15px 5vw 10px; */
-        /* height: 10vh; */
+        height: 9vh;
         z-index: 9990;
         backdrop-filter: blur(8px);
         background-color:  rgb(252, 252, 252);
-        top: 0;
         border-bottom: 1px solid #f78c4028;
-    }
-    
+    }  
 }
+
 
 .navbarWrapper {
     display: flex;
@@ -147,10 +147,11 @@
     .drawer {
         display: flex;
          flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         justify-content: center;
-        background-color: #fff;
-        /* height: 95vh; */
+        background-color: rgb(252, 252, 252);
+        height: 95vh;
+        /* margin-top: 10vh; */
         width: 100vw;
         position: relative;
         padding: 5vw;
@@ -161,6 +162,8 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    /* align-items: center; */
+    justify-content: center;
     height: 100vh;
     gap:2vh ;
     position: relative;
@@ -201,6 +204,13 @@
 }
 
 .credits{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
     position: absolute;
     bottom: 0;
+}
+
+.credit{
+    font-size: 0.8rem;
 }
