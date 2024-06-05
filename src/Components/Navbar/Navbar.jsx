@@ -16,12 +16,12 @@ export const Navbar = () => {
       <div className={styles.navbarWrapper}>
         <div className={styles.navRow}>
           <div className={styles.navbarLeft}>
-           <a href="/" className="">
-           <img src={logo} alt="" className={styles.logo} />
-           </a>
+            <a href="/" className="">
+              <img src={logo} alt="" className={styles.logo} />
+            </a>
           </div>
           <div className={styles.navbarCenter}>
-            {navbarLinks?.map((navItem,index) => (
+            {navbarLinks?.map((navItem, index) => (
               <div className={styles.navbarLinkBox} key={index}>
                 <a href={navItem?.link} className={styles.linkName}>
                   {navItem?.title}
@@ -30,7 +30,13 @@ export const Navbar = () => {
             ))}
           </div>
           <div className={styles.navbarRight}>
-            <button className={styles.join}>Join Whatsapp Channel</button>
+            <a
+              href="https://whatsapp.com/channel/0029VaKFZ0e0bIdpmuDApI2t"
+              target="_blank"
+              className={styles.linkBtn}
+            >
+              <button className={styles.join}>Join Whatsapp Channel</button>
+            </a>
             {isDrawerOpen ? (
               <FontAwesomeIcon
                 onClick={() => {
@@ -55,10 +61,16 @@ export const Navbar = () => {
           <div className={styles.drawer}>
             <div className={styles.mobileWrap}>
               <div className={styles.mobileNav}>
-                {navbarLinks?.map((navItem,index) => (
+                {navbarLinks?.map((navItem, index) => (
                   <div key={index}>
                     <div className={styles.mobileNavbarLinkBox}>
-                      <a onClick={()=>{setIsDrawerOpen(false)}} href={navItem?.link} className={styles.mobilelinkName}>
+                      <a
+                        onClick={() => {
+                          setIsDrawerOpen(false);
+                        }}
+                        href={navItem?.link}
+                        className={styles.mobilelinkName}
+                      >
                         {navItem?.title}
                       </a>
                       <FontAwesomeIcon icon={faAngleRight} />
@@ -67,9 +79,15 @@ export const Navbar = () => {
                   </div>
                 ))}
               </div>
-              <button className={styles.mobileJoin}>
-                Join Whatsapp Channel
-              </button>
+              <a
+                href="https://whatsapp.com/channel/0029VaKFZ0e0bIdpmuDApI2t"
+                target="_blank"
+                className={styles.linkBtn}
+              >
+                <button className={styles.mobileJoin}>
+                  Join Whatsapp Channel
+                </button>
+              </a>
               <div className={styles.credits}>
                 <span className={styles.credit}>All Rights Reserved</span>
                 <span className={styles.credit}>
