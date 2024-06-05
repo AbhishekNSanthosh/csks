@@ -43,22 +43,27 @@ export const navbarLinks = [
     {
         title:"Home",
         link:"/",
+        hr:true
     },
     {
         title:"About us",
         link:"/aboutus",
+        hr:true
     },
     {
         title:"office bearers",
         link:"/office-bearers",
+        hr:true
     },
     {
         title:"Gallery",
         link:"/gallery",
+        hr:true
     },
     {
         title:"Contact",
         link:"/contact-us",
+        hr:false
     },
 ]
 

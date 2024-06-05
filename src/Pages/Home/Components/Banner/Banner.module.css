@@ -3,6 +3,7 @@
     align-items: center;
     justify-content: center;
     width: 100vw;
+    z-index: 1;
     height: 90vh;
     background: linear-gradient(to bottom, #13151778, #13151778),url('../../../../assets/banner1.png') center/cover no-repeat;
     margin-top: 11vh;
@@ -16,6 +17,7 @@
         justify-content: center;
         width: 100vw;
         height:90vh;
+        z-index: -1;
         background: linear-gradient(to bottom, #13151778, #13151778), url('../../../../assets/banner1.png') center/cover no-repeat;
         margin-top: 11vh;
         position: relative;
