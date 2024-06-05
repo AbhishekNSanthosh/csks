@@ -16,7 +16,9 @@ export const Navbar = () => {
       <div className={styles.navbarWrapper}>
         <div className={styles.navRow}>
           <div className={styles.navbarLeft}>
-            <img src={logo} alt="" className={styles.logo} />
+           <a href="/" className="">
+           <img src={logo} alt="" className={styles.logo} />
+           </a>
           </div>
           <div className={styles.navbarCenter}>
             {navbarLinks?.map((navItem,index) => (
