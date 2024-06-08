@@ -9,7 +9,10 @@
   <link rel="apple-touch-icon" href="logo.png" />
   <meta name="keywords" content="">
   <meta name="robots" content="index, follow">
-  <link rel="preload" as="image" href="logo.png">
+  <link rel="preload" as="image" href="/src/assets/banner1.png">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+
   <title>IEEE CSKS</title>
   <style>
     #overlay {
@@ -37,12 +40,13 @@
       height: auto;
     }
 
-    @media only screen and (max-width: 880px) {
-      #overlay img {
-        width: 50vw;
-        height: auto;
-      }
+    
+@media only screen and (max-width: 880px) {
+  #overlay img {
+      width: 50vw;
+      height: auto;
     }
+}
 
     .loader {
       width: 12px;
@@ -82,18 +86,41 @@
 
 <body>
   <div id="overlay">
-    <img src="logo.png" alt="Logo">
+    <img src="./logo.png" alt="Logo">
     <span class="loader"></span>
   </div>
   <div id="root"></div>
 
-  <script type="module" src="/src/main.jsx" defer></script>
+  <script type="module" src="/src/main.jsx"></script>
   <script>
-    window.addEventListener('load', function () {
-      const overlay = document.getElementById('overlay');
-      setTimeout(() => {
-        overlay.style.display = 'none';
-      }, 2000);
+    $(window).on('load', function () {
+      var images = $('#root img');
+      var imagePromises = [];
+
+      images.each(function () {
+        var img = $(this);
+        var imagePromise = new Promise(function (resolve, reject) {
+          img.on('load', resolve);
+          img.on('error', reject);
+
+          // Trigger the load event for cached images
+          if (img[0].complete) {
+            resolve();
+          }
+        });
+
+        imagePromises.push(imagePromise);
+      });
+
+      Promise.all(imagePromises).then(function () {
+        setTimeout(function() {
+          $('#overlay').fadeOut();
+        }, 2000); // Wait for 2 seconds
+      }).catch(function () {
+        setTimeout(function() {
+          $('#overlay').fadeOut(); // Optionally handle image load errors
+        }, 2000); // Wait for 2 seconds
+      });
     });
   </script>
 </body>

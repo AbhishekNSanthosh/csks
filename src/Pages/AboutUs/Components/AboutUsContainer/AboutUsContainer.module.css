@@ -1,6 +1,7 @@
 .container{
     margin-top: 0;
     display: flex;
+    height: auto;
 }
 
 

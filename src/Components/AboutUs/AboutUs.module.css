@@ -3,7 +3,8 @@
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    padding: 1rem 5vw;
+    padding: 2rem 5vw;
+    margin-top: 10vh;
     /* background: url('../../assets/bg.png') center/contain no-repeat; */
     width: 100vw;
 }
@@ -15,7 +16,7 @@
         justify-content: center;
         min-height: 100vh;
         padding: 5vh 5vw 5rem;
-        min-height: 100vh;
+margin-top: 0;
         /* background: url('../../assets/bg.png') center/contain no-repeat; */
         width: 100vw;
     }
@@ -27,6 +28,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
+    gap: 5vh;
 }
 
 
@@ -37,7 +39,7 @@
         align-items: center;
         justify-content: center;
         width: 100%;
-        gap: 3vh;
+        gap: 5vh;
     }
 }
 
