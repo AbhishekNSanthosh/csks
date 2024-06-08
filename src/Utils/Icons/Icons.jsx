@@ -1,3 +1,7 @@
+import whatsappLogo from './whats.png'
+import linkedinLogo from './logo.png'
+import mailLogo from './gmail.png'
+
 export const IconPeopleGroup = (props) => {
   return (
     <svg viewBox="0 0 640 512" fill="currentColor" {...props}>
@@ -40,3 +44,10 @@ export const EventList = (props) => {
     </svg>
   );
 };
+
+
+export const logo = {
+  whatsapp:whatsappLogo,
+  linkedinLogo,
+  mailLogo
+}
