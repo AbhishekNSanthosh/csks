@@ -1,8 +1,11 @@
 import React from "react";
 import about from "../../assets/about.jpg";
 import styles from "./AboutUs.module.css";
+import { useLocation } from "react-router-dom";
 
 export const AboutUsComponent = () => {
+  const location = useLocation();
+
   return (
     <div className={styles.container}>
       <div className={styles.wrapper}>
@@ -33,6 +36,8 @@ export const AboutUsComponent = () => {
           </div>
         </div>
 
+        {location?.pathname === '/aboutus' &&
+        <>
         <div className={styles.wrap}>
           <div className={styles.left}>
             <span className={styles.subTitle}>The Professional Execom</span>
@@ -78,6 +83,8 @@ export const AboutUsComponent = () => {
             </p>
           </div>
         </div>
+        </>
+        }
       </div>
     </div>
   );
